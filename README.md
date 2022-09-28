@@ -13,7 +13,7 @@ Curso sobre Cloud Computing IaaS. Openstack.
 	* [Gestión de imágenes con OpenStack client (OSC)](modulo2/imagen_osc.md)
 3. Nova. Gestión de instancias.
 	* [Conceptos previos](modulo3/conceptos_previos.md)
-	* Trabajo con claves ssh
+	* [Trabajo con claves ssh](modulo3/claves_ssh.md)
 	* Creación de instancias a partir de una imagen
 	* Operaciones sobre la instancia
 	* Instantáneas de instancias
