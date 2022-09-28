@@ -43,3 +43,7 @@ Indicamos los siguientes datos:
 * **RAM mínima (MB)**: Requisito que nos indica el tamaño mínimo de memoria RAM que debe tener una instancia que se cree a partir de la imagen.
 * **Visibilidad**: Un usuario que no es administrador, no puede subir imágenes públicas. La imagen sólo sería visible para el usuario. tenemos varias [niveles de visibilidad](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design).
 * **Protegido**: La imagen que vamos a crear no se podrá borrar por otro usuario.
+
+## ¿Dónde encontramos imágenes para OpenStack
+
+Podemos encontrar imágenes oficiales para OpenStack en la página: [Get Images](https://docs.openstack.org/image-guide/obtain-images.html). También tenemos una guía para crear nuestras propias imágenes: [OpenStack Virtual Machine Image Guide](https://docs.openstack.org/image-guide/).
