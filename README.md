@@ -10,7 +10,7 @@ Curso sobre Cloud Computing IaaS. Openstack.
 
 2. Glance. Gestión de imágenes.
 	* [Gestión de imágenes con Horizon](modulo2/imagen_horizon.md)
-	* [Gestión de imágenes con OpenStack client (OSC)](modulo2/imágenes_osc.md)
+	* [Gestión de imágenes con OpenStack client (OSC)](modulo2/imagen_osc.md)
 3. Nova. Gestión de instancias.
 4. Cinder. Gestión del almacenamiento.
 5. Neutron. Gestión de las redes.
