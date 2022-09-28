@@ -1,4 +1,4 @@
-# Gestionar imágenes desde Horizon
+# Gestión imágenes con Horizon
 
 Una imagen de máquina virtual, o de forma abreviada una imagen, es un fichero que contiene un disco virtual con un sistema operativo con la configuración conocidos los relacionados con los hipervisores más conocidos: VMDK para VMware, qcow2 para QEMU/KVM, etc. o el formato (ami-ari-aki propio de Xen y muy habitual en IaaS por ser el que utiliza Amazon EC2).
 
@@ -6,4 +6,8 @@ Teniendo en cuenta el enfoque de recursos compartidos que se utiliza en IaaS, es
 
 Las imágenes se utilizan para instanciar las máquinas virtuales que realmente utiliza el usuario.
 
-## Catálogo
+## Catálogo de imágenes
+
+Para ver las imágenes que inicialmente podemos utilizar abrimos la opción de **Imágenes**:
+
+![Imágenes](img/01.png)
