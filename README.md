@@ -14,7 +14,7 @@ Curso sobre Cloud Computing IaaS. Openstack.
 3. Nova. Gestión de instancias.
 	* [Conceptos previos](modulo3/conceptos_previos.md)
 	* [Trabajo con claves ssh](modulo3/claves_ssh.md)
-	* [Creación de instancias a partir de una imagen](modulo3/instancia.md)
+	* [Creación de instancias a partir de una imagen](modulo3/instancias.md)
 	* Operaciones sobre la instancia
 	* Instantáneas de instancias
 	* Redimensión y reconstrucción de instancias
