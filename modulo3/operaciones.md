@@ -38,27 +38,20 @@ creada son las siguientes:
 * **Editar instancia**: Nos permite cambiar el nombre de la instancia.
 * **Ver log**: Podemos acceder al log de arranque de la instancia. 
 * **Consola**: Por último, podemos acceder a una **consola VNC** para manejar nuestra instancia como si se tratase de una máquina virtual, aunque deberá estar definida previamente la contraseña del usuario.
-* **Actualizar metadatos**
+* **Actualizar metadatos**: Nos permite modificar los metadatos de la instancia.
 
 ## Acciones avanzadas sonre la intancia
 
 * **Redimensionar instancia**: Podemos cambiar el sabor de la instancias.
 * **Reconstruir instancia / Rescue instance**: Mecanismo que nos posibilita acceder al disco de una instancia que tenga algún problema, con el objetivo se solucionar dicho problema. 
-* **Aislar instancia**
+* **Aislar instancia**: "Archivar" una instancia permite detener una instancia y recuperar los recursos asociados (es decir, vcpu, ram, disco) sin tener que eliminar completamente la instancia. Se crea una instantánea de la instancia. La instancia en ejecución se elimina efectivamente del nodo de computación, pero los detalles del tiempo de ejecución, como las vCPU, la memoria, el tamaño del disco y las direcciones IP, se conservan. En cualquier momento podemos eliminar la instancia o recuperar su ejecución.
 
 ## Acciones sobre el ciclo de vida de la instancia
 
-* **Pausar instancia**: Paramos la ejecución de una instancia, guardando su
-  estado en memoria RAM.
-* **Suspender instancia**: Paramos la ejecución de una instancia, guardando
-  su estado en disco.
-* **Apagado instancia**: Apagamos la máquina virtual, pero sigue definida,
-  por lo que puede volver a arrancarse con las mismas características cuando sea
-  necesario.
-* **Encender instancia**: Si tenemos una instancia apagada, nos permite
-  encenderla.
-* **Reanudar instancia**: Si tenemos una instancia suspendida o pausada, nos
-  permite indicar que la máquina siga funcionando. 
+* **Pausar instancia**: Paramos la ejecución de una instancia, guardando su estado en memoria RAM.
+* **Suspender instancia**: Paramos la ejecución de una instancia, guardando su estado en disco.
+* **Apagado instancia**: Apagamos la máquina virtual, pero sigue definida, por lo que puede volver a arrancarse con las mismas características cuando sea  necesario.
+* **Encender instancia**: Si tenemos una instancia apagada, nos permite encenderla.
+* **Reanudar instancia**: Si tenemos una instancia suspendida o pausada, nos permite indicar que la máquina siga funcionando. 
 * **Reiniciar instancia**: Ejecuta un comando *reboot* en la instancia. Tenemos dos tipos: "suave" que intenta hacer un apagado normal de la máquina y su reinicio; también podemos hacer un reinicio "duro", si tenemos algún problema en la instancia.
-* **Eliminar instancia**: Destruye la instancia, liberando los recursos que
-  tenía ocupados.
+* **Eliminar instancia**: Destruye la instancia, liberando los recursos que tenía ocupados.
