@@ -15,7 +15,7 @@ Curso sobre Cloud Computing IaaS. Openstack.
 	* [Conceptos previos](modulo3/conceptos_previos.md)
 	* [Trabajo con claves ssh](modulo3/claves_ssh.md)
 	* [Creación de instancias a partir de una imagen](modulo3/instancias.md)
-	* [Operaciones sobre la instancia](operaciones.md)
+	* [Operaciones sobre la instancia](modulo3/operaciones.md)
 	* Instantáneas de instancias
 	* Redimensión y reconstrucción de instancias
 4. Cinder. Gestión del almacenamiento.
