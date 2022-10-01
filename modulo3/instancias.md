@@ -80,3 +80,39 @@ Las opciones restante nos la vamos a estudiar en este curso.
 Una vez que hemos creado la instancia:
 
 ![instancias](img/instancias9.png) 
+
+Comprobamos que tiene asignada una IP en el direccionamiento privado que posee la red privada a la que hemos conectado la instancia. Necesitamos un mecanismo que nos permita, utilizando una IP en el mismo rango que nuestra red de trabajo, el acceso a la máquina. A esta tipo de dirección IP la llamamos **IP flotante** y por medio de un mecanismos de DNAT que se produce el router donde está conectada la red privada, permite el acceso a la instancia.
+
+Para asignar una **IP flotante** a la instancia:
+
+1. Elegimos la opción **IPs flotantes** en el apartado **Red** y reservamos una nueva IP, con la opción **Asignar IP al proyecto**.
+
+	![instancias](img/instancias10.png) 
+
+2. A continuación podemos elegir la opción **Asociar** de la IP flotante que hemos reservado, y asignamos esa nueva IP a la instancia que acabamos de crear.
+
+	![instancias](img/instancias11.png) 
+
+3. Recuerda que una vez que la IP pública no esté asignada a una instancia se puede liberar.
+4. También podemos gestionar las IPs flotantes asignadas a una instancia desde el menú **Asociar IP flotante** de las acciones que podemos realizar a una instancia.
+5. Ahora podemos acceder a la instancia usando la IP flontante y nuestra clave privada.
+
+	```
+	ssh debian@172.22.201.49
+	The authenticity of host '172.22.201.49 (172.22.201.49)' can't be established.
+	ECDSA key fingerprint is SHA256:92GUIaJtO12FgZDkidfzTSyciQqi5gSl4oFJDttBdmI.
+	Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+	Warning: Permanently added '172.22.201.49' (ECDSA) to the list of known hosts.
+	Linux maquina1 5.10.0-18-amd64 #1 SMP Debian 5.10.140-1 (2022-09-02) x86_64
+	
+	The programs included with the Debian GNU/Linux system are free software;
+	the exact distribution terms for each program are described in the
+	individual files in /usr/share/doc/*/copyright.
+	
+	Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+	permitted by applicable law.
+	debian@maquina1:~$ 
+	```
+
+	Si el fichero de la clave privada no se llama `id_rsa`, tendremos que usar la opción `-i` para realizar la conexión: `ssh -i clave debian@172.22.201.49`.
+	
