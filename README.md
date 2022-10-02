@@ -19,5 +19,18 @@ Curso sobre Cloud Computing IaaS. Openstack.
 	* [Instantáneas de instancias](modulo3/instantaneas.md)
 	* [Redimensión y reconstrucción de instancias](modulo3/redimension.md)
 	* [Gestión de instancia con OpenStack client (OSC)](modulo3/osc_nova.md)
+	* [Configuración de instancias con cloud-init]
 4. Cinder. Gestión del almacenamiento.
+	* Conceptos previos de volúmenes
+	* Creación de volúmenes, asociación a instancias
+	* Operaciones sobre volúmenes
+	* Creación de instancia ejecutadas sobre volúmenes
+	* Gestión de volúmenes con OpenStack client (OSC)
 5. Neutron. Gestión de las redes.
+	* Introducción a la virtualización de redes
+	* Conceptos previos de neutron
+	* Gestión de redes con horizon
+	* Puertos de red
+	* Deshabilitar el grupo de seguridad de una instancia
+	* Eliminación de la infraestructura de red creada
+	* Gestión de redes con OpenStack client (OSC)
