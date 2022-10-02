@@ -89,7 +89,7 @@ En OpenStack Horizon, durante la creación de una instancia podemos indicar el *
 
 Usando la línea de comandos, se indica el fichero de configuración en el parámetro `--user-data`:
 
- openstack server create --flavor m1.mini \
+	openstack server create --flavor m1.mini \
         --image "Debian 11.0 - Bullseye" \
         --security-group default \
         --key-name clave_jdmr \
