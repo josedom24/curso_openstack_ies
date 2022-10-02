@@ -37,10 +37,6 @@ Cuando se configura una instancia con cloud-init, se siguen los siguientes pasos
 
 Hay varios formatos aceptados para introducir **user-data**, el más habitual es mediante el formato YAML conocido como cloud-config.
 
-En OpenStack durante la creación de una instancia podemos indicar el **user-data** en la siguiente pestaña:
-
-![cloud-init](img/cloud-init.png)
-
 Veamos un ejemplo de un script cloud-config:
 
 ```yaml
@@ -83,4 +79,20 @@ chpasswd:
   expire: False
 ```
 
-Por último puedes acceder a la lista de módulos que puedes usar en cloud-config en la [documentación oficial](https://cloudinit.readthedocs.io/en/latest/topics/modules.html).
+Puedes acceder a la lista de módulos que puedes usar en cloud-config en la [documentación oficial](https://cloudinit.readthedocs.io/en/latest/topics/modules.html).
+
+## Configuración de cloud-init
+
+En OpenStack Horizon, durante la creación de una instancia podemos indicar el **user-data** en la siguiente pestaña:
+
+![cloud-init](img/cloud-init.png)
+
+Usando la línea de comandos, se indica el fichero de configuración en el parámetro `--user-data`:
+
+ openstack server create --flavor m1.mini \
+        --image "Debian 11.0 - Bullseye" \
+        --security-group default \
+        --key-name clave_jdmr \
+        --network "red de josedom" \
+        --user-data cloud-config.yaml
+        instancia_prueba
