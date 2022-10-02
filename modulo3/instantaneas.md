@@ -33,3 +33,15 @@ $ ssh debian@172.22.200.37
 $ ls
 fichero.txt
 ```
+
+## Aislar instancia
+
+La operación de aislar o archivar una instancia permite detener una instancia y recuperar los recursos asociados (es decir, vcpu, ram, disco) sin tener que eliminar completamente la instancia.
+
+Hemos aislado la instancia `maquina1` y comprobamos que se crea una instantánea de la instancia:
+
+![snapshot](img/instantanea5.png)
+
+La instancia en ejecución se elimina efectivamente del nodo de computación, pero los detalles del tiempo de ejecución, como las vCPU, la memoria, el tamaño del disco y las direcciones IP, se conservan. En cualquier momento podemos eliminar la instancia o recuperar su ejecución.
+
+![snapshot](img/instantanea6.png)
