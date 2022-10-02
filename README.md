@@ -21,7 +21,7 @@ Curso sobre Cloud Computing IaaS. Openstack.
 	* [Gestión de instancia con OpenStack client (OSC)](modulo3/osc_nova.md)
 	* [Configuración de instancias con cloud-init](modulo3/cloudinit.md)
 4. Cinder. Gestión del almacenamiento.
-	* Conceptos previos de volúmenes
+	* [Conceptos previos de volúmenes](modulo4/conceptos_previos.md)
 	* Creación de volúmenes, asociación a instancias
 	* Operaciones sobre volúmenes
 	* Creación de instancia ejecutadas sobre volúmenes
