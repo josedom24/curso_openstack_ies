@@ -17,6 +17,6 @@ Curso sobre Cloud Computing IaaS. Openstack.
 	* [Creación de instancias a partir de una imagen](modulo3/instancias.md)
 	* [Operaciones sobre la instancia](modulo3/operaciones.md)
 	* [Instantáneas de instancias](modulo3/instantaneas.md)
-	* Redimensión y reconstrucción de instancias
+	* [Redimensión y reconstrucción de instancias](modulo3/redimension.md)
 4. Cinder. Gestión del almacenamiento.
 5. Neutron. Gestión de las redes.
