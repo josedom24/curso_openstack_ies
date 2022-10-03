@@ -1,12 +1,12 @@
 # Operaciones sobre volúmenes
 
-**Imagen con operaciones de volumen**
+![volumen](img/operaciones1.png)
 
 ## Editar el volumen
 
 Esta opción nos permite cambiar el nombre y la descripción del volumen. Además, si contiene el contenido de una imagen podemos indicar que el disco va  a ser arrancable.
 
-**Imagen editar volumen**
+![volumen](img/operaciones1.png)
 
 ## Extender volumen
 
@@ -26,7 +26,7 @@ Veamos un ejemplo:
 
 2. Vamos a redimensionar a un tamaño de 2Gb:
 
-	**Imagen redimensión de volumen**
+	![volumen](img/operaciones3.png)
 
 	A continuación tenemos que redimensionar el sistema de ficheros:
 
@@ -52,19 +52,19 @@ Veamos un ejemplo:
 
 2. A continuación vamos a crear una instantánea del volumen. Si el volumen está asociado a una instancia, te advierte que puede haber corrupción de datos:
 
-	**Imagen snapshot volumen**
+	![volumen](img/operaciones4.png)
 
 	Por lo tanto desasociamos el volumen y volvemos a crear la instantánea:
 
-	**Imagen snapshot volumen**
+	![volumen](img/operaciones5.png)
 
-3. En la pestaña **Snaphots de volumen** encontramos las instantáneas que hemos creado:
+3. En la pestaña **Instátaneas de volumen** encontramos las instantáneas que hemos creado:
 
-	**Imagen lista snapshot volumen**
+	![volumen](img/operaciones6.png)
 
 	Con la opción **Crear volumen** podemos crear un volumen a partir de la instantánea:
 
-	**Imagen crear nuevo volumen**
+	![volumen](img/operaciones7.png)
 
 4. Si asociamos este nuevo volumen a la instancia, y lo montamos, podemos comprobar que el fichero de prueba está creado:
 
@@ -77,19 +77,17 @@ Veamos un ejemplo:
 
 Si tenemos a nuestra disposición varios tipos de Volumen (distintos backends donde podemos crear volúmenes) con esta operación podemos hacer la migración de un tipo de volumen a otro.
 
-**Imagen cambiar tipo de volumen**
-
 ## Subir Imagen
 
-Esta operación nos permite subir el contenido de un volumen como una imagen en Glance. Muy adecuada cuando el volumen contiene un sistema operativo y lo queremos guardar como imagen.
+Esta operación nos permite subir el contenido de un volumen como una imagen en Glance. Muy adecuada cuando el volumen contiene un sistema operativo y lo queremos guardar como imagen. Hay que indicar el tipo de fichero que queremos crear.
 
-**Imagen subir imagen**
+![volumen](img/operaciones8.png)
 
 ## Crear transferencia
 
 Esta opción nos permite transferir un volumen de un proyecto a otro. Para ello el volumen no debe estar asociado a una instancia.
 
-**Imagen transferencia**
+![volumen](img/operaciones9.png)
 
 ## Eliminar volumen
 
