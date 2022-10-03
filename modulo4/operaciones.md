@@ -6,7 +6,7 @@
 
 Esta opción nos permite cambiar el nombre y la descripción del volumen. Además, si contiene el contenido de una imagen podemos indicar que el disco va  a ser arrancable.
 
-![volumen](img/operaciones1.png)
+![volumen](img/operaciones2.png)
 
 ## Extender volumen
 
