@@ -8,19 +8,31 @@ Veamos los pasos que tenemos que realizar:
 
 1. Creamos un nuevo disco a partir de una imagen de un sistema operativo.
 
-	![volumen](img/instancias_volumen/01.png)
+	![volumen](img/instancia1.png)
 
 2. Ahora creamos una nueva instancia cuyo origen será el disco que hemos creado.
 
-	![volumen](img/instancias_volumen/02.png)
+	![volumen](img/instancia2.png)
 
-3. Vamos a acceder a la instancia y vamos a realizar un cambio por ejemplo vamos a crear un fichero.
+3. Elegimos un sabor para la nueva instancia del tipo **vol**, ya que no tienen especificado el tamaño del disco raíz porque será el que hemos asignado al volumen.
 
-		$ ssh -i clave_demo.pem cirros@172.24.4.4
+	![volumen](img/instancia3.png)
+
+4. Comprobamos que se ha creado la instancia y le hemos asociado una IP flotante:
+
+	![volumen](img/instancia4.png)
+
+5. Vamos a acceder a la instancia y vamos a realizar un cambio por ejemplo vamos a crear un fichero.
+
+		$ ssh ubuntu@172.22.200.204
 		$ touch prueba.txt
 
-4. Terminamos esta instancia (el volumen no se va a destruir) y creamos una nueva instancia a partir del mismo volumen (le vamos a asignar otra IP pública para que apreciemos que estamos accediendo a otra instancia). Vamos a comprobar que el fichero creando en la instancia anterior, existe:
+6. Terminamos esta instancia (el volumen no se va a destruir) y creamos una nueva instancia a partir del mismo volumen (le vamos a asignar otra IP pública para que apreciemos que estamos accediendo a otra instancia). 
 
-		$ ssh-i clave_demo.pem cirros@172.24.4.5
+	![volumen](img/instancia5.png)
+
+	Vamos a comprobar que el fichero creando en la instancia anterior, existe:
+
+		$ ssh ubuntu@172.22.201.52
 		$ ls
 		prueba.txt

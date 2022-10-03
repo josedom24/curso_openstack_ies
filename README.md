@@ -24,8 +24,8 @@ Curso sobre Cloud Computing IaaS. Openstack.
 	* [Conceptos previos de volúmenes](modulo4/conceptos_previos.md)
 	* [Creación de volúmenes, asociación a instancias](modulo4/volumen.md)
 	* [Operaciones sobre volúmenes](modulo4/operaciones.md)
-	* Creación de instancia ejecutadas sobre volúmenes
-	* Gestión de volúmenes con OpenStack client (OSC)
+	* [Creación de instancia ejecutadas sobre volúmenes](modulo4/instancias_volumen.md)
+	* [Gestión de volúmenes con OpenStack client (OSC)](modulo4/osc_cinder.md)
 5. Neutron. Gestión de las redes.
 	* Introducción a la virtualización de redes
 	* Conceptos previos de neutron
