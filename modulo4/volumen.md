@@ -8,7 +8,7 @@ Los pasos para crear un nuevo volumen son los siguientes:
 
 Accedemos al apartado **Volúmenes** y a la opción **Crear Volumen**:
 
-**Imagen crear volumen**
+![volumen](img/volumen1.png)
 
 A continuación hay que  introducir la siguiente información:
 
@@ -24,13 +24,17 @@ El volumen sólo se podrá eliminar cuando no esté asociado a ninguna instancia
 
 ## Asociar un volumen a una instancia
 
-Esta función nos permite gestionar la asociación entre volúmenes e instancias. Si el volumen no está asociado a ninguna instancia podemos escoger la instancia a la que vamos a asociarlo:
+La operación **Administrar asociaciones**, nos permite gestionar la asociación entre volúmenes e instancias. Si el volumen no está asociado a ninguna instancia podemos escoger la instancia a la que vamos a asociarlo:
 
-**Imagen asociación de volumen**
+![volumen](img/volumen2.png)
+
+Y vemos cómo nos indica la asociación:
+
+![volumen](img/volumen3.png)
 
 Si el volumen ya está asociado a una instancia, podemos desasociarlo con la misma opción:
 
-**Imagen desasociación de volumen**
+![volumen](img/volumen4.png)
 
 Si accedemos a la instancia y comprobamos los dispositivos de bloques que tiene conectada, obtendremos lo siguiente:
 
