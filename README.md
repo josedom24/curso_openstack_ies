@@ -31,6 +31,7 @@ Curso sobre Cloud Computing IaaS. Openstack.
 	* [Conceptos previos de neutron](modulo5/conceptos_previos.md)
 	* [Gestión de redes con horizon](modulo5/gestion.md)
 	* Puertos de red
-	* Deshabilitar el grupo de seguridad de una instancia
 	* Eliminación de la infraestructura de red creada
+	* Configurar instancia como router. Deshabilitar el grupo de seguridad.
+	* Creación de un red interna:http://iesgn.github.io/cloud2/curso/u6/router2
 	* Gestión de redes con OpenStack client (OSC)
