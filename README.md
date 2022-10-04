@@ -30,7 +30,7 @@ Curso sobre Cloud Computing IaaS. Openstack.
 	* [Introducción a la virtualización de redes](modulo5/introduccion.md)
 	* [Conceptos previos de neutron](modulo5/conceptos_previos.md)
 	* [Gestión de redes con horizon](modulo5/gestion.md)
-	* Puertos de red
+	* [Puertos de red](modulo5/puertos.md)
 	* Eliminación de la infraestructura de red creada
 	* Configurar instancia como router. Deshabilitar el grupo de seguridad.
 	* Creación de un red interna:http://iesgn.github.io/cloud2/curso/u6/router2
