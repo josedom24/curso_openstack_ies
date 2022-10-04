@@ -5,7 +5,7 @@ Curso sobre Cloud Computing IaaS. Openstack.
 1. Introducción al Cloud Computing. OpenStack.
 	* Presentación: Introducción al Cloud Computing
     * Presentación: Introducción a OpenStack
-    * Acceso a Horizon
+    * Acceso a Horizon y primeros pasos 
     * Instalación y uso básico de OpenStack client (OSC)
 
 2. Glance. Gestión de imágenes.
@@ -31,7 +31,5 @@ Curso sobre Cloud Computing IaaS. Openstack.
 	* [Conceptos previos de neutron](modulo5/conceptos_previos.md)
 	* [Gestión de redes con horizon](modulo5/gestion.md)
 	* [Puertos de red](modulo5/puertos.md)
-	* Eliminación de la infraestructura de red creada
-	* Configurar instancia como router. Deshabilitar el grupo de seguridad.
-	* Creación de un red interna:http://iesgn.github.io/cloud2/curso/u6/router2
-	* Gestión de redes con OpenStack client (OSC)
+	* [Eliminación de la infraestructura de red creada](modulo5/borrar.md)
+	* [Gestión de redes con OpenStack client (OSC)](modulo5/osc_neutron.md)

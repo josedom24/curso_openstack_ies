@@ -43,3 +43,16 @@ Y finalmente comprobamos que se ha creado la instancia con la IP que habíamos c
 
 ![red](img/puertos7.png)
 
+## Deshabilitar la seguridad de un puerto
+
+Como hemos comentando anteriormente OpenStack nos proporciona un cortafuegos por cada interfaz de red que tiene una instancia. Las reglas de este cortafuegos están gestionadas en los **Grupos de Seguridad** y además, tenemos la opción de habilitar o deshabilitar la seguridad de un determinado puerto, es decir activar o desactivar el cortafuegos para cada interfaz.
+
+El cortafuegos que tenemos habilitado en cada interfaz de una instancia, además de controlar los puertos que tienen permitido el acceso por medio de las regalas que declaramos en los **Grupos de Seguridad**, tiene reglas adicionales para evitar ataques de spoofing. Estas reglas que aumentan la seguridad de los puertos provocan que algunos escenarios que montamos en OpenStack no funcionen de manera adecuada, por ejmplo, si queremos que una instancia haga de router.
+
+Por todo ello es posible configurar por separado cada **Grupo de Seguridad** de cada puerto, para ello escogemos **Instancias -> Intefaces -> Editar grupos de seguridad**:
+
+![red](img/puertos8.png)
+
+Por otro lado si deseamos desactivar la **Seguridad de un Puerto** escogemos **Instancias -> Intefaces -> Editar puerto** y desmarcamos la opción **Seguridad del puerto**.
+
+![red](img/puertos9.png)
