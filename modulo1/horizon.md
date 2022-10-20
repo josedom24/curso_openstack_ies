@@ -12,7 +12,7 @@ Donde indicamos nuestro nombre de usuario y contraseña y como dominio elegimos 
 
 El acceso a las instancias creadas por OpenStack se hará mediante el uso de un par de claves ssh. Por lo tanto, lo primero que tenemos que hacer es subir a OpenStack nuestra clave pública que será inyectada en la instancia en su creación (podemos subir varias y elegiremos la que vamos a inyectar a la hora de crear la instancia).
 
-OpenStack nos da la opción de crear un par de claves con la opción **Crear Par de Claves**, donde ponemos un nombre y escogemos el tipo *Clave SSH*. Esta opción creará un par de claves SSH, la calve pública se guardará en OpenStack y podremos descargar la clave privada para usarla para el acceso de las instancias (evidentemente OpenStack no almacena la clave privada, por lo que sólo tendremos una opción de descargarlas, si la pierdes tendrás que generar nuevas claves).
+OpenStack nos da la opción de crear un par de claves con la opción **Crear Par de Claves**, donde ponemos un nombre y escogemos el tipo *Clave SSH*. Esta opción creará un par de claves SSH, la clave pública se guardará en OpenStack y podremos descargar la clave privada para usarla para el acceso de las instancias (evidentemente OpenStack no almacena la clave privada, por lo que sólo tendremos una opción de descargarlas, si la pierdes tendrás que generar nuevas claves).
 
 ![horizon](img/horizon2.png)
 
@@ -30,3 +30,14 @@ Podemos crear distintos conjuntos de reglas de cortafuegos, a cada uno de ellos 
 
 La idea de tener las reglas de cortafuegos agrupadas en distintos grupos, nos posibilita agrupar reglas que tengan que ver con un determinado servicio y de esta manera poder ser más flexible a la hora de asignar distintas configuraciones de cortafuegos a distintas instancias. Además como cada interfaz de red de la instancia tiene un cortafuegos nos facilita que cada la configuración de cada uno de ellos sea distinta.
 
+Podemos acceder a los grupos de seguridad en el menú **Red** y **Grupos de Seguridad**. Observamos que tenemos creado un grupo de seguridad por defecto (**Default**). Tenemos la posibilidad de crear nuevos grupos de seguridad eligiendo la opción **Crear grupo de seguridad**:
+
+![horizon](img/horizon4.png)
+
+Si accedemos al Grupo de Seguridad **Default** (opción **Administrar reglas**), vemos las reglas que tenemos creadas y podemos añadir nuevas reglas con la opción **Agregar reglas**: 
+
+![horizon](img/horizon5.png)
+
+Al añadir las reglas poodemos poner los puertos que queremos permitir o elegir de una lista los servicios que queremos permitir. Por ejemplos las reglas que me permiten acceder por SSH y hacer ping a las máquinas desde cualquier origen, quedarían de la siguiente forma:
+
+![horizon](img/horizon6.png)

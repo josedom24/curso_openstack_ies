@@ -21,7 +21,7 @@ openstack 5.8.0
 
 Ahora necesitamos el fichero de credenciales, para que nos podamos autentificar a nuestro proyecto de OpenStack, para descargar el fichero desde horizon escogemos la siguiente opción:
 
-Imagen
+![horizon](img/horizon7.png)
 
 Para cargar las variables de entorno que se definen en ese fichero podemos ejecutar:
 
@@ -54,3 +54,22 @@ Para aprender más operaciones que podemos realizar con las claves con OSC: [Ope
 
 ## Configuración de los Grupos de seguridad con OSC
 
+Con el cliente de OpenStack también podemos hacer la gestión completas de los grupos de seguridad: crear nuevos grupos, crear nuevas reglas, ... Por ejemplo para abrir el puerto 22 y poder acceder a las instancias por SSH, podemos ejecutar:
+
+```
+(os)$ openstack security group rule create --protocol tcp --remote-ip 0.0.0.0/0 --dst-port 80 default
+```
+
+Para permitir el protocolo ICMP y poder hacer ping a las instancias, ejecutaríamos:
+
+```
+(os)$ openstack security group rule create --protocol icmp  default
+```
+
+Por último, para ver las reglas del grupo de seguridad **default**:
+
+```
+(os)$ openstack security group rule list default
+```
+
+Para estudiar todas las opciones disponibles para trabajar con los grupos de seguridad: [OpensStackClient security group](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/security-group.html) y [OpensStackClient security group rule](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/security-group-rule.html).
