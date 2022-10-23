@@ -3,7 +3,7 @@
 Curso sobre Cloud Computing IaaS. Openstack.
 
 ## 1. Introducción al Cloud Computing. OpenStack.
-* [Presentación: Introducción al Cloud Computing](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/cloudcomputing.pdf)
+* [Presentación: Introducción al Cloud Computing y OpenStack](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/cloudcomputing.pdf)
 * [Acceso a Horizon y primeros pasos](modulo1/horizon.md)
 * [Instalación y uso básico de OpenStack client (OSC)](modulo1/osc.md)
 
