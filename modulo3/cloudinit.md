@@ -40,6 +40,7 @@ Hay varios formatos aceptados para introducir **user-data**, el más habitual es
 Veamos un ejemplo de un script cloud-config:
 
 ```yaml
+# cloud-config
 # Instalamos algunos paquetes:
 packages:
   - apache2
