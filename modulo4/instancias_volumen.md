@@ -6,11 +6,11 @@ Tenemos la posibilidad de crear discos a partir de imágenes de sistemas operati
 
 Veamos los pasos que tenemos que realizar:
 
-1. Creamos un nuevo disco a partir de una imagen de un sistema operativo.
+1. Creamos un nuevo volumen a partir de una imagen de un sistema operativo.
 
 	![volumen](img/instancia1.png)
 
-2. Ahora creamos una nueva instancia cuyo origen será el disco que hemos creado.
+2. Ahora creamos una nueva instancia cuyo origen será el volumen que hemos creado.
 
 	![volumen](img/instancia2.png)
 
