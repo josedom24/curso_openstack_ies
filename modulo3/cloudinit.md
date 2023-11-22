@@ -67,7 +67,7 @@ chpasswd:
     root:password
     usuario1:password1
     usuario1:password2
-expire: False
+  expire: False
 ```
 
 Este script hace las siguientes configuraciones:
