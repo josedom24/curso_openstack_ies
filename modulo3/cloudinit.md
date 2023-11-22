@@ -44,6 +44,9 @@ Veamos un ejemplo de un script cloud-config:
 # Actualiza los paquetes
 package_update: true
 package_upgrade: true
+# Instala el paquete apache2
+packages:
+  - apache2
 # Configura el hostname y el fqdn
 fqdn: maquina.example.org
 hostname: maquina
@@ -70,6 +73,7 @@ expire: False
 Este script hace las siguientes configuraciones:
 
 * Actualiza los paquetes.
+* Instala el paquete apache2.
 * Configura el hostname y el fqdn.
 * Crear dos usuarios, configura el acceso por sudo y añade clave pública ssh.
 * Cambia las contraseña a los usuarios creados.
