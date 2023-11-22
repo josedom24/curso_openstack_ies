@@ -40,44 +40,40 @@ Hay varios formatos aceptados para introducir **user-data**, el más habitual es
 Veamos un ejemplo de un script cloud-config:
 
 ```yaml
-# cloud-config
-# Instalamos algunos paquetes:
-packages:
-  - apache2
-# Configuramos los repositorios del CICA:
-apt:
-  # Deshabilitamos backports
-  disable_suites:
-    - backports
-  primary:
-    - arches: [default]
-      uri: https://ftp.cica.es/debian/
-  security:
-    - arches: [default]
-      uri: https://ftp.cica.es/debian-security/
-# Configuramos adecuadamente el hostname
-preserve_hostname: false
-fqdn: test1.gonzalonazareno.org
-hostname: test1
-# Realizamos un upgrade
+#cloud-config
+# Actualiza los paquetes
 package_update: true
 package_upgrade: true
-# Definimos la zona horaria
-timezone: Europe/Madrid
-# Crear un usuario y añadir clave pública ssh
+# Configura el hostname y el fqdn
+fqdn: maquina.example.org
+hostname: maquina
+manage_etc_hosts: true
+# Crear dos usuarios, configura el acceso por sudo y añade clave pública ssh
 users:
-  - name: jose
+  - name: usuario1
     sudo: ALL=(ALL) NOPASSWD:ALL
     shell: /bin/bash
-    passwd: asdasd
-    ssh_authorized_keys:
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCmjoVIoZCx4QFXvljqozXGqxxlSvO7V2aizqyPgMfGqnyl0J9YXo6zrcWYwyWMnMdRdwYZgHqfiiFCUn2QDm6ZuzC4Lcx0K3ZwO2lgL4XaATykVLneHR1ib6RNroFcClN69cxWsdwQW6dpjpiBDXf8m6/qxVP3EHwUTsP8XaOV7WkcCAqfYAMvpWLISqYme6e+6ZGJUIPkDTxavu5JTagDLwY+py1WB53eoDWsG99gmvyit2O1Eo+jRWN+mgRHIxJTrFtLS6o4iWeshPZ6LvCZ/Pum12Oj4B4bjGSHzrKjHZgTwhVJ/LDq3v71/PP4zaI3gVB9ZalemSxqomgbTlnT
+    ssh_authorized_keys: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQ...
+  - name: usuario2
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQ...
+# Cambia las contraseña a los usuarios creados
 chpasswd:
   list: |
-    root:asdasd
-    jose:asdasd
-  expire: False
+    root:password
+    usuario1:password1
+    usuario1:password2
+expire: False
 ```
+
+Este script hace las siguientes configuraciones:
+
+* Actualiza los paquetes.
+* Configura el hostname y el fqdn.
+* Crear dos usuarios, configura el acceso por sudo y añade clave pública ssh.
+* Cambia las contraseña a los usuarios creados.
+
 
 Puedes acceder a la lista de módulos que puedes usar en cloud-config en la [documentación oficial](https://cloudinit.readthedocs.io/en/latest/topics/modules.html).
 
