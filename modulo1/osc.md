@@ -72,4 +72,4 @@ Por último, para ver las reglas del grupo de seguridad **default**:
 (os)$ openstack security group rule list default
 ```
 
-Para estudiar todas las opciones disponibles para trabajar con los grupos de seguridad: [OpensStackClient security group](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/security-group.html) y [OpensStackClient security group rule](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/security-group-rule.html).
+Para estudiar todas las opciones disponibles para trabajar con los grupos de seguridad: [OpensStackClient security group](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/security-group.html) y [OpenStackClient security group rule](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/security-group-rule.html).
