@@ -12,7 +12,7 @@ proyecto:
 2. Creamos una red de nombre *mi_red* con una subred asociada con el direccionamiento 192.168.0.0/24:
 
         openstack network create mi_red
-        openstack subnet create --network mi_red --subnet-range 192.168.0.0/24 mi_subred
+        openstack subnet create --network mi_red --subnet-range 192.168.0.0/24 --dns-nameserver 172.22.0.1 mi_subred
 
     Podemos configurar la subred con más detalle (rango DHCP, puerta de enlace,...) para ello:
 
@@ -33,6 +33,15 @@ proyecto:
 4. Si queremos conectar una instancia a la red que hemos creado, ejecutaremos:
 
         openstack server add network nombre_instancia mi_red
+
+5. Podemos crear una nueva instancia conectada a la red que hemos creado:
+
+        openstack server create --flavor m1.mini \
+        --image "Debian 11.0 - Bullseye" \
+        --security-group default \
+        --key-name clave_jdmr \
+        --network mi_red \
+        instancia_prueba3
 
 Podemos ver todas las acciones que podemos hacer sobre las redes, subredes y router en:
 
@@ -63,7 +72,7 @@ Podemos ver todas las acciones que podemos hacer sobre las redes, subredes y rou
         --security-group default \
         --key-name clave_jdmr \
         --port mi_port \
-        instancia_prueba3
+        instancia_prueba4
 
 4. A partir de un puerto creado, podemos añadir una interfaz a un router:
 
@@ -82,7 +91,7 @@ Podemos ver todas las acciones que podemos hacer sobre las redes, subredes y rou
 
     Lo primero es quitar el grupo de seguridad a la instancia:
 
-        openstack server remove security group instancia_prueba3 default
+        openstack server remove security group instancia_prueba4 default
 
     Ahora la instancia tiene todos los puertos cerrado, por lo que a continuación hay que deshabilitar la seguridad del puerto:
 
