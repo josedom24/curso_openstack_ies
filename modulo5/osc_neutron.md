@@ -30,6 +30,10 @@ proyecto:
 
         openstack router add subnet mi_router mi_subred
 
+4. Si queremos conectar una instancia a la red que hemos creado, ejecutaremos:
+
+        openstack server add network nombre_instancia mi_red
+
 Podemos ver todas las acciones que podemos hacer sobre las redes, subredes y router en:
 
 * [OpenStackClient network](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/network.html)
@@ -66,6 +70,11 @@ Podemos ver todas las acciones que podemos hacer sobre las redes, subredes y rou
         openstack port create --network mi_red --fixed-ip ip-address=192.168.0.200 mi_port2
         openstack router create mi_router3
         openstack router add port mi_router3 mi_port2
+
+5. De manera similar podemos añadir una nueva interfaz a una instancia correspondiente al puerto que hemos creado:
+
+        openstack port create --network mi_red --fixed-ip ip-address=192.168.0.201 mi_port3
+        openstack server add port nombre_instancia mi_port3
 
 ## Deshabilitar el grupo de seguridad de una instancia
 
