@@ -1,6 +1,6 @@
 # Redimensión y reconstrucción de instancias
 
-## # Redimensión de instancias
+## Redimensión de instancias
 
 Esta acción sirve para cambiar las características hardware del servidor, modificando el tipo de instancia (sabor) asociado al mismo. Este proceso también se conoce como escalado vertical o *scale up*.
 
