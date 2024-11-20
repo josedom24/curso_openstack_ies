@@ -4,19 +4,28 @@ Otra forma de interactuar con OpenStack es usar un cliente de línea de comandos
 
 ## Instalación de OpenStack Client
 
-Para instalar el cliente de OpenStack vamos a usar un entorno virtual de python3:
+Para instalar el cliente de OpenStack podemos usar un entorno virtual de python3:
 
 ```
 $ python3 -m venv os
 (os)$ source os/bin/activate
-(os)$ pip install python-openstackclient==5.8.0
+(os)$ pip install python-openstackclient
 ```
-
-No hemos instalado la última versión, hemos instalado la versión de OSC que corresponde con la versión yoga de OpenStack que estamos utilizando:
 
 ```
 (os)$ openstack --version
-openstack 5.8.0
+openstack 7.2.1
+```
+
+O realizar la instalación con `apt`:
+
+```
+apt install python3-openstackclient
+```
+
+```
+openstack --version
+openstack 6.0.0
 ```
 
 Ahora necesitamos el fichero de credenciales, para que nos podamos autentificar a nuestro proyecto de OpenStack, para descargar el fichero desde horizon escogemos la siguiente opción:
