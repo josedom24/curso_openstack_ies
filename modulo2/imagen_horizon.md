@@ -12,7 +12,7 @@ Para ver las imágenes que inicialmente podemos utilizar abrimos la opción de *
 
 ![Imágenes](img/01.png)
 
-Una imagen se puede **lanzar** para crear una instancia a partir de ella. También podemos **Crear un volumen** a parir de una imagen. Las imágenes también pueden ser **borraradas**.
+Una imagen se puede **lanzar** para crear una instancia a partir de ella. También podemos **Crear un volumen** a partir de una imagen. Las imágenes también pueden ser **borraradas**.
 
 ### Subir una imagen
 
