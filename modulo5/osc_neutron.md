@@ -98,3 +98,9 @@ Podemos ver todas las acciones que podemos hacer sobre las redes, subredes y rou
         openstack port set --disable-port-security mi_port
     
     Nota: Si el puerto no tiene nombre tenemos que indicar el id del puerto.
+
+Se puede hacer también. las dos operaciones, ejecutando:
+
+```
+openstack port set --disable-port-security --no-security-group mi_port
+```
